@@ -18,7 +18,6 @@ public class Runner extends Sportsman {
         return super.toString() + "\n" + "Runner{" +
                 "speed=" + speed +
                 ", endurance=" + endurance +
-                ", country='" + country + '\'' +
                 '}' + "\n";
     }
 
