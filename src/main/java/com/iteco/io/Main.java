@@ -23,7 +23,7 @@ public class Main {
         StringBuilder stringBuilder1 = new StringBuilder();
 
         while(fis.ready()){
-            stringBuilder.append((char) fis.read());
+            stringBuilder.append(Character.toLowerCase((char) fis.read()));
         }
 
         if (stringBuilder.length() > 128) {
@@ -36,7 +36,7 @@ public class Main {
                 stringBuilder1.append(matcher.group());
             }
 
-            String[] t = stringBuilder1.toString().toLowerCase().split("[ \n]");
+            String[] t = stringBuilder1.toString().split("[ \n]");
             stringBuilder1.delete(0, stringBuilder1.length());
 
             for (int i = 0; i < t.length; i++) {
