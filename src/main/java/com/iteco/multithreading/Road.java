@@ -4,12 +4,9 @@ public class Road{
     int person;
     int cars;
 
-
-
     public void startPerson() throws InterruptedException {
         while (true){
             Thread.sleep(2000);
-
             person++;
             System.out.println(person + " person");
             if (person == 4) {
